@@ -49,7 +49,7 @@ function checkScore() {
 
 
     winningCombos.forEach(array => {
-        const crosseWins = array.every(cell =>
+        const crossWins = array.every(cell =>
             allSquares[cell].firstChild?.classList.contains('cross'))
         if (crossWins) {
             infoDisplay.textContent = "Cross Wins!"
